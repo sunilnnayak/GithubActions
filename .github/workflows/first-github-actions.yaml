@@ -1,0 +1,11 @@
+name: Run Shell commands
+
+on: [push, fork]
+
+jobs:
+    run-shell-command:
+        runs-on: ubuntu-latest
+        name: Run a shell command and print some text
+        steps:
+            - name: echo a string
+              run: echo "Hello, Security Gurus! This is our First GitHub Action"
